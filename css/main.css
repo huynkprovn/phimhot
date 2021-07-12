@@ -1,0 +1,102 @@
+main {
+    width: 100%;
+    background: var(--gray);
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.components {
+    width: 100%;
+}
+
+#series-movie, #feature-films, #movie-theaters, #anime-movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.components-title {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+    padding: 2rem 0 1rem;
+}
+
+.components-all-movie>a {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.components-all-movie>a:hover {
+    color: var(--main);
+}
+
+main h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.films {
+    width: 20rem;
+    height: max-content;
+    margin: 1.5rem 2rem;
+}
+
+.film-image {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+    background-position: top;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+
+.film-title {
+    height: 4rem;
+    margin: 1rem 0.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+    font-size: 1.6rem;
+    overflow: hidden;
+    line-height: 2rem;
+    color: var(--white);
+}
+
+.film-title:hover {
+    color: var(--main);
+}
+
+.film-image:hover {
+    transform: scale(1.05);
+}
+
+hr {
+    width: 100%;
+    border: none;
+    background: var(--light-gray);
+    height: 1px;
+    margin: 1rem 0 0;
+}
+
+/* Responsive */
+@media only screen and (max-width: 75rem){
+    .components-title{
+        margin: 0 3rem;
+    }
+    .films{
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 41.188rem){
+    .films{
+        margin: 1rem 2.2rem;
+    }
+}

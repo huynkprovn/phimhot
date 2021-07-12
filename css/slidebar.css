@@ -1,0 +1,66 @@
+.slidebar {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    top: 0;
+}
+
+.slidebar-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.slidebar-menu {
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    width: 26rem;
+    height: 100vh;
+    background: var(--white);
+    margin-right: -26rem;
+    transition: 0.5s;
+}
+
+.slidebar-menu>li {
+    font-size: 1.8rem;
+    margin: 0 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--main);
+    text-transform: capitalize;
+}
+
+.slidebar-menu>li:first-child {
+    text-align: right;
+    padding: 0;
+    margin: 1rem 1.5rem 0;
+}
+
+.slidebar-menu>li:last-child, .slidebar-menu>li:first-child, .slidebar-category-item>li:last-child, .slidebar-nations-item>li:last-child {
+    border: none;
+}
+
+.slidebar-category-item, .slidebar-nations-item {
+    padding: 0 1.8rem;
+}
+
+.slidebar-category-item>li, .slidebar-nations-item>li {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    border-bottom: 1px solid var(--main);
+    text-transform: capitalize;
+}
+
+.close-icon {
+    font-size: 2.8rem;
+}
+
+.arrow-icon {
+    font-size: 1.6rem;
+    float: right;
+    margin: 0 1rem;
+    line-height: 2.2rem;
+}

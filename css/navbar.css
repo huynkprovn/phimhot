@@ -1,0 +1,100 @@
+nav {
+    width: 100%;
+    height: 4rem;
+    background: var(--light-gray);
+}
+
+nav ul {
+    display: flex;
+    font-size: 1.6rem;
+    color: var(--white);
+    height: 100%;
+}
+
+.max-width>ul>li {
+    padding: 0 2rem;
+    font-weight: bold;
+    line-height: 4rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.max-width>ul>li:hover {
+    color: var(--black);
+    background: var(--white);
+}
+
+.detail-icon {
+    margin: 0 0.5rem;
+    vertical-align: 10%;
+}
+
+/* List Items */
+
+.category-details>li:hover, .nations-list>li:hover {
+    color: var(--main);
+}
+
+.category-details, .nations-list {
+    background: var(--white);
+    color: var(--black);
+    display: none;
+    left: 0;
+    top: 4rem;
+}
+
+.films-category, .nations {
+    position: relative;
+}
+
+.films-category:hover .category-details, .nations:hover .nations-list {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-details, .nations-list {
+    height: max-content;
+    position: absolute;
+}
+
+.category-details {
+    width: 72rem;
+}
+
+.nations-list {
+    width: 38rem;
+}
+
+.category-details>li {
+    width: 18rem;
+    padding: 0 1rem;
+}
+
+.nations-list>li {
+    padding: 0 1rem;
+    width: 12rem;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 75rem) {
+    nav ul{
+        font-size: 1.8rem;
+    }
+    .max-width>ul>li{
+        font-weight: lighter;
+    }
+    .nations-list{
+        width: 39rem;
+    }
+    .nations-list>li{
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width: 62rem){
+    nav{
+        display: none;
+    }
+}
